@@ -1,0 +1,11 @@
+node_modules/
+.codemap/
+.DS_Store
+codemap-graph.svg
+codemap-export.*
+coverage/
+dist/
+*.log
+.env
+.env.*
+!.env.example

@@ -1,0 +1,14 @@
+{
+  "name": "web-app",
+  "version": "1.0.0",
+  "description": "A sample Node.js app",
+  "main": "src/index.js",
+  "dependencies": {
+    "express": "^4.19.0",
+    "react": "^18.3.0"
+  },
+  "scripts": {
+    "start": "node src/index.js",
+    "test": "node --test tests/"
+  }
+}

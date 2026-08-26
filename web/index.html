@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CodeMap</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="topbar">
+  <div class="logo"><span class="mark"></span>Code<b>Map</b></div>
+  <div class="searchbox">
+    <input id="search" type="text" placeholder="Search files…" autocomplete="off">
+    <span class="kbd">/</span>
+    <div class="search-results" style="display:none"></div>
+  </div>
+  <div class="modes">
+    <button data-mode="flow" class="active">File Tree<span class="key">T</span></button>
+    <button data-mode="graph">Graph<span class="key">V</span></button>
+    <button data-mode="dep">Dependency<span class="key">G</span></button>
+    <button data-mode="arch">Architecture<span class="key">A</span></button>
+  </div>
+  <div class="top-actions">
+    <button id="heat-toggle" title="Toggle heatmap (H)">Heat</button>
+    <button id="download-graph" title="Download the current view as SVG">Download SVG</button>
+    <button id="expand-all">Expand all</button>
+    <button id="collapse-all">Collapse all</button>
+    <button id="open-root">Project</button>
+    <button id="copy-root" title="Copy project path">Path</button>
+  </div>
+</div>
+<div class="breadcrumbs"></div>
+<div class="main">
+  <div class="sidebar">
+    <div class="head"><span>Files</span></div>
+    <div class="tree"></div>
+  </div>
+  <div class="map-wrap">
+    <canvas id="map-canvas"></canvas>
+    <div class="map-status">Loading…</div>
+    <div class="map-hint">drag = pan · scroll = zoom · dblclick = open · right-click = menu</div>
+    <div class="zoom-controls">
+      <button class="zoom-in" title="Zoom in">+</button>
+      <button class="zoom-out" title="Zoom out">−</button>
+      <button class="zoom-fit" title="Reset view (R)">⤢</button>
+    </div>
+  </div>
+  <div class="info" style="display:flex">
+    <div class="head"><span class="title">Project</span><button class="close">&times;</button></div>
+    <div class="body"></div>
+  </div>
+</div>
+<script src="app.js"></script>
+</body>
+</html>
