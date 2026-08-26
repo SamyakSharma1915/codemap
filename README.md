@@ -35,7 +35,7 @@ your machine: no source code is uploaded and the web server listens only on
 Clone the repository, then install CodeMap globally:
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/codemap.git
+git clone https://github.com/SamyakSharma1915/codemap.git
 cd codemap
 npm install
 npm install --global .
